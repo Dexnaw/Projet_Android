@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.arnaud.heh.be.androidproject.Activities.PillActivity">
+
+    <Toolbar
+        android:id="@+id/tb_pill_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        />
+
+    <TextView
+        android:id="@+id/tv_pill_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:text="Complete IP address:"/>
+
+    <EditText
+        android:id="@+id/et_pill_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:hint="IP Address"/>
+
+    <Button
+        android:id="@+id/bt_pill_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="OnPillClickManager"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="CONNECT"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_pill_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="On/Off"/>
+
+        <CheckBox
+            android:id="@+id/cb_pill_detectfilling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="Filling"/>
+
+        <CheckBox
+            android:id="@+id/cb_pill_detectbouchonning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="Bouchonning"/>
+
+        <CheckBox
+            android:id="@+id/cb_pill_detectpills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="Pills"/>
+
+        <CheckBox
+            android:id="@+id/cb_pill_genbottles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="Generate bottle"/>
+
+        <CheckBox
+            android:id="@+id/cb_pill_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="Online Access"/>
+
+        <CheckBox
+            android:id="@+id/cb_pill_distribpillcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="DistributionPillContact"/>
+
+        <CheckBox
+            android:id="@+id/cb_pill_enginebandcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="EngineBandContact"/>
+
+        <CheckBox
+            android:id="@+id/cb_pill_demand5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="5"/>
+
+        <CheckBox
+            android:id="@+id/cb_pill_demand10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="10"/>
+
+        <CheckBox
+            android:id="@+id/cb_pill_demand15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="15"/>
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/tv_pill_numpills"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Pill Number = ..."/>
+
+    <TextView
+        android:id="@+id/tv_pill_numbottles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Bottle Number = ..."/>
+
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="automatonType_array">
+        <item>Pill packaging (S7‐1516 2DPPN)</item>
+        <item>Fluid level control (S7‐1214C)</item>
+    </array>
+</resources>

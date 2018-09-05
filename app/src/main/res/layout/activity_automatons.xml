@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.arnaud.heh.be.androidproject.Activities.AutomatonsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <Toolbar
+            android:id="@+id/tb_automatons_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            />
+
+        <TextView
+            android:id="@+id/tv_automatons_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="Choose an automaton\nto connect with"/>
+
+        <GridView
+            android:id="@+id/gv_automatons_automatonlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:numColumns="2"
+        />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/bt_automatons_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end|right"
+        android:layout_margin="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="OnAutomatonClickManager"
+        android:scaleType="center"
+        android:src="@android:drawable/ic_input_add"
+        app:backgroundTint="@color/colorPrimaryDark" />
+        <!--app:fabSize="normal"/-->
+
+</android.support.design.widget.CoordinatorLayout>

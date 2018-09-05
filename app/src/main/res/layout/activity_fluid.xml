@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.arnaud.heh.be.androidproject.Activities.FluidActivity">
+
+    <Toolbar
+        android:id="@+id/tb_fluid_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        />
+
+    <TextView
+        android:id="@+id/tv_fluid_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:text="Complete IP address:"/>
+
+    <EditText
+        android:id="@+id/et_fluid_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:hint="IP Address"/>
+
+    <Button
+        android:id="@+id/bt_fluid_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="OnFluidClickManager"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        style="?android:attr/borderlessButtonStyle"
+        android:text="CONNECT"/>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_fluid_sevalve1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:textColor="#000000"
+            android:text="Se_Valve1"/>
+
+        <CheckBox
+            android:id="@+id/cb_fluid_sevalve2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:textColor="#000000"
+            android:text="Se_Valve2"/>
+
+        <CheckBox
+            android:id="@+id/cb_fluid_sevalve3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:textColor="#000000"
+            android:text="Se_Valve3"/>
+
+        <CheckBox
+            android:id="@+id/cb_fluid_sevalve4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:textColor="#000000"
+            android:text="Se_Valve4"/>
+
+        <CheckBox
+            android:id="@+id/cb_fluid_manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:textColor="#000000"
+            android:text="Se_Manual"/>
+
+        <CheckBox
+            android:id="@+id/cb_fluid_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:textColor="#000000"
+            android:text="Online Access"/>
+
+        <CheckBox
+            android:id="@+id/cb_fluid_qvalve1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:textColor="#000000"
+            android:text="Q1(Valve1)"/>
+
+        <CheckBox
+            android:id="@+id/cb_fluid_qvalve2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:textColor="#000000"
+            android:text="Q2(Valve2)"/>
+
+        <CheckBox
+            android:id="@+id/cb_fluid_qvalve3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:textColor="#000000"
+            android:text="Q3(Valve3)"/>
+
+        <CheckBox
+            android:id="@+id/cb_fluid_qvalve4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:textColor="#000000"
+            android:text="Q4(Valve4)"/>
+
+
+    </GridLayout>
+
+    <TextView
+        android:id="@+id/tv_fluid_fluidlevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="Fluid Level = ..."/>
+
+    <TextView
+        android:id="@+id/tv_fluid_consignauto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="Consign Auto = ..."/>
+
+    <TextView
+        android:id="@+id/tv_fluid_consignman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="Consign Man = ..."/>
+
+    <TextView
+        android:id="@+id/tv_fluid_valvecontrolword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:text="Valve Control Word = ..."/>
+
+</LinearLayout>
